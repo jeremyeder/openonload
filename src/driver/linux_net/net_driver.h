@@ -80,7 +80,7 @@
  *
  **************************************************************************/
 
-#define EFX_DRIVER_VERSION	"4.1.2.1003"
+#define EFX_DRIVER_VERSION	"4.1.2.1003b"
 
 #ifdef DEBUG
 #define EFX_BUG_ON_PARANOID(x) BUG_ON(x)
@@ -112,7 +112,7 @@
 #define EFX_USE_FAKE_VLAN_TX_ACCEL 1
 #endif
 
-#if defined(EFX_NOT_UPSTREAM) && defined(EFX_ENABLE_SFC_XPS) && defined(EFX_HAVE_SELECT_QUEUE) && !defined(CONFIG_XPS) && defined(EFX_HAVE_SKB_TX_HASH)
+#if defined(EFX_NOT_UPSTREAM) && defined(EFX_ENABLE_SFC_XPS) && defined(EFX_HAVE_NDO_SELECT_QUEUE) && !defined(CONFIG_XPS) && defined(EFX_HAVE_SKB_TX_HASH)
 #define EFX_USE_SFC_XPS
 #endif
 
