@@ -49,7 +49,6 @@
 #define __CI_CIUL_SYSDEP_LINUX_H__
 
 #include <asm/io.h>
-#include <asm/system.h>
 #include <linux/errno.h>
 #include <linux/string.h>
 
